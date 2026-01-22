@@ -1,0 +1,17 @@
+{
+  "name": "WordPress Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/php:7.4",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "echo 'Setting up WordPress'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "felixfbecker.php-debug",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "forwardPorts": [8080]
+}
